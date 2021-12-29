@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Ultra");
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 32px;
+
+  border: 2px solid #555;
+  border-radius: 56px;
+
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.info {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+.simon-tag {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 100;
+  margin-top: 0;
+  font-family: "Ultra", serif;
+  color: white;
+}
+
+#appColorButtons {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-gap: 16px;
+}
+
+.colorButton {
+  border: 3px solid #333;
+  border-radius: 150px;
+  outline: none;
+  cursor: pointer;
+}
+
+.red {
+  background: #ff0000;
+}
+.red-active {
+  background: #ff7f7f;
+}
+.green {
+  background: #00db5f;
+}
+.green-active {
+  background: #a0ffc9;
+}
+.blue {
+  background: #1776d6;
+}
+.blue-active {
+  background: #56aaff;
+}
+.yellow {
+  background: #fed93f;
+}
+.yellow-active {
+  background: #fff4c9;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8px;
+  color: white;
+}
+#counterDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 60px;
+
+  font-size: 2em;
+  background: #222;
+  color: red;
+  border-radius: 16px;
+}
+#strictMarker {
+  margin: 0;
+  font-size: 0.4em;
+}
+
+#startStrict {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commandButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  margin: 0 8px;
+
+  border: 3px solid #333;
+  border-radius: 16px;
+
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+#start {
+  background: #777;
+}
+#strict {
+  background: #555;
+}
